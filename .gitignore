@@ -1,0 +1,10 @@
+# Project exclude paths
+/moviesRatingsBatch/target/
+/moviesRatingsBatch/target/scala-2.12/classes/
+/moviesRatingsStreaming/target/
+/project/project/target/
+/project/target/
+/target/
+/target/scala-2.12/classes/
+.idea
+.bsp
