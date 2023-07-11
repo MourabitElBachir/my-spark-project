@@ -10,6 +10,9 @@ object Main extends App {
       .master("local")
       .getOrCreate()
 
+    // Prevent INFO logs
+    spark.sparkContext.setLogLevel("ERROR")
+
     // Run Process Data
     Job.run()
 
