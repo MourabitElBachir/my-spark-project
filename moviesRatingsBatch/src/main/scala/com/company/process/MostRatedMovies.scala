@@ -7,6 +7,8 @@ import scala.util.Try
 
 object MostRatedMovies {
 
+  val outputPath = "C:\\output\\mostRatedMovies"
+
   def process(ratingsDf: DataFrame, moviesDf: DataFrame)(implicit spark: SparkSession): Try[DataFrame] = Try {
 
     val countRatingsDf = ratingsDf

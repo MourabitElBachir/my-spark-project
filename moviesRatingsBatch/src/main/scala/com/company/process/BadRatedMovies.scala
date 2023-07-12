@@ -6,6 +6,9 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 import scala.util.Try
 
 object BadRatedMovies {
+
+  val outputPath = "C:\\output\\badRatedMovies"
+
   def process(ratingsDf: DataFrame, moviesDf: DataFrame)(implicit spark: SparkSession): Try[DataFrame] = Try {
 
     val avgRatingsDf = ratingsDf
